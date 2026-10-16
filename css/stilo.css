@@ -289,7 +289,7 @@ a:hover{
   width: 50%;
   font-size: 25px;
   margin-left: -200px;
-  gap: 40px;
+  
   
 }
 .innerOne h2{
@@ -301,4 +301,26 @@ a:hover{
 }
 .innerOne p{
   
+}
+
+@media screen and (max-width: 844px) {
+  .apresentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+    margin-left: 15%;
+  }
+  .img-regente{
+    height: 200px;
+  }
+ .innerOne h2{
+    gap: 10px;
+    font-size: 10px !important;
+    margin-top: 10px !important;
+ }
+ .innerOne p{
+  font-size: 7px;
+ }
+
 }
