@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+}
+body{
+    background: black;
+    color:white
+}
+
+
+
+.face{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:baseline ;
+    border: 1px solid black;
+    height: 50vh;
+    border-bottom: 1px solid gray
+}
+.text01{
+    display: flex;
+    margin-left: 35px;
+    color:rgb(255, 255, 255);
+    position: absolute;
+    top:11.5%;
+    margin-bottom: 0;
+    letter-spacing: -0.9px;
+    
+}
+.face h1{
+    margin-left: 25px;
+    font-family: "Archivo Black", sans-serif;
+    font-size: 70px;
+    font-weight: 900;
+    letter-spacing: -5px;
+    color: rgb(45, 45, 154);
+    line-height: 0.9;
+    transform: scaleY(2);
+    text-shadow: 0.5px 0.5px 0.5px rgb(0, 0, 0);
+}
+.color-word{
+    color: rgb(254, 254, 255);
+    margin-left: 8px;
+}
+.text02{
+    letter-spacing: -0.4px;
+    margin-left: 25px;
+    color:white;
+    position: absolute;
+    top:40%;
+    
+
+}
+.conteiner{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    margin-left: 10px ;
+    height: 100px;
+   /* border: 1px solid white;*/
+}
+
+.box-conteiner{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+
+}
+.checklistAluno{
+    display: flex;
+    margin: 8px;
+    background: linear-gradient(rgb(15, 14, 14));
+    border: 1px solid rgb(52, 49, 49);
+    padding: 20px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    width: 70%;
+    transition: all 0.2s ease;
+}
+.checklistAluno input{
+    padding: 10px;
+    width: 40px;
+    height: 20px;
+    accent-color: rgb(45, 45, 154);
+    
+}
+.checklistAluno:hover{
+    border: 1px solid;
+    border-color: #007bff80;
+    
+}
+.checklistAluno:has(input:checked){
+    border: 2px solid;
+    border-color: rgb(45, 45, 154);
+}
+/* DIV DOS DADOS NOME,EMAIL,ETC.*/
+.checkdata{
+    margin: 15px;
+    display: flex;
+    gap:10%;
+    width: 73%;
+}
+.checklistNome{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+}
+
+.campoNome, .campoemail {
+        border-radius: 10px 10px 10px 10px ;
+        padding: 15px;
+        width: 400px;
+        background: rgb(33, 31, 31);
+        border: none;
+        color: white;
+        outline: none;
+
+}
+.campoNome:focus, .campoemail:focus{
+    outline: 2px solid rgb(45, 45, 154);
+}
