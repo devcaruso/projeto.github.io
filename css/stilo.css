@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Kdam+Thmor+Pro&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 *{
   margin: 0;
-   font-family: 'D-DIN', sans-serif;
+   font-fmily: 'D-DIN', sans-serif;
+    font-family: "Kdam Thmor Pro", sans-serif;
 
 }
 body{
@@ -263,18 +264,41 @@ a:hover{
 }
 
 .corpo{
-  width: 50%;
   height: 100vh;
-  border: 1 px solid white;
-  border: 1px solid white
 }
 .conteiner{
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.apresentation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .img-regente{
-  border-radius: 10px;
   
+  height: 500px;
   margin-top:20%;
+}
+.innerOne{
+  position: relative;
+  color: white;
+  width: 50%;
+  font-size: 25px;
+  margin-left: -200px;
+  gap: 40px;
+  
+}
+.innerOne h2{
+  margin-bottom: 80px;
+  font-size:45px ;
+
+
+  
+}
+.innerOne p{
+  
 }
