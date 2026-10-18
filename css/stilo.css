@@ -4,7 +4,6 @@
   *{
     margin: 0;
     padding: 0;
-    
     font-family: "Kdam Thmor Pro", sans-serif;
 
   }
@@ -12,7 +11,8 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    /*overflow-x: hidden;
+    overflow-y: auto;*/
     background: black;
   }
 
@@ -318,10 +318,11 @@ a:hover{
     box-sizing: border-box !important;
   }
   html, body{
-    width: 470px;
+    width: 420px;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    box-sizing: border-box;
+    /*overflow-x: hidden;*/
     background: black;
   }
   h1{
@@ -335,9 +336,9 @@ a:hover{
   .banner {
   
     position: relative;
-    width: 600px;
+    width: 100%;
     height: 100vh;
-    overflow: hidden;
+    
   
   }
 
@@ -346,7 +347,7 @@ a:hover{
     height: 100vh;
     object-fit: cover;
     display: block;
-    margin-left: -50px;
+    margin-left: 0;
   }
   .imgLogo{
     display: none;
