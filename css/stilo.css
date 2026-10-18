@@ -377,6 +377,7 @@ a:hover{
   }
 
   .botao{
+    top: 56%;
     left: 10px;
     font-size: 12px;
     width: 90px;
