@@ -2,8 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Kdam+Thmor+Pro&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 *{
   margin: 0;
-   font-fmily: 'D-DIN', sans-serif;
-    font-family: "Kdam Thmor Pro", sans-serif;
+  font-family: "Kdam Thmor Pro", sans-serif;
 
 }
 body{
@@ -299,11 +298,13 @@ a:hover{
 
   
 }
-.innerOne p{
-  
-}
 
 @media screen and (max-width: 844px) {
+  h1{
+    font-size: 10px;
+    letter-spacing: 0;
+  } 
+
   .apresentation{
     display: flex;
     justify-content: center;
@@ -311,16 +312,18 @@ a:hover{
     flex-direction: column ;
     margin-left: 15%;
   }
+
   .img-regente{
     height: 200px;
   }
+
  .innerOne h2{
     gap: 10px;
     font-size: 10px !important;
     margin-top: 10px !important;
  }
+
  .innerOne p{
   font-size: 7px;
  }
-
 }
