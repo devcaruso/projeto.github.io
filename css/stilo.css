@@ -362,22 +362,23 @@ a:hover{
   .texto-banner h1{
     margin-top: 10%;
     font-size: 25px;
+    bottom: 0;
   }
 
   .texto-banner p{
     margin-top: 25%;
     font-size: 20px;
+    bottom: 4;
   }
 
   .texto1{
     font-size: 9px;
     border-left: 2px solid white;
     height: 30px;
-
   }
 
   .botao{
-    top: 56%;
+    top: 54%;
     left: 10px;
     font-size: 12px;
     width: 90px;
