@@ -317,18 +317,22 @@ a:hover{
     box-sizing: border-box !important;
   }
   body{
-    width: 390px;
+    width: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
     background: black;
     touch-action: pan-y;
+    
   }
   h1{
     font-size: 10px;
     letter-spacing: 0;
   } 
+  p{
+    font-size: 20px;
+  }
 
   .menu{
     top:-10px
@@ -372,9 +376,12 @@ a:hover{
   }
 
   .texto1{
-    font-size: 9px;
     border-left: 2px solid white;
     height: 30px;
+  }
+  
+  .texto1 p{
+    font-size: 9px;
   }
 
   .botao{
@@ -389,7 +396,7 @@ a:hover{
     display: none;
     top: 200px
   }
- /* .apresentation{
+  .apresentation{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -403,11 +410,11 @@ a:hover{
 
  .innerOne h2{
     gap: 10px;
-    font-size: 10px !important;
+    font-size: 20px !important;
     margin-top: 10px !important;
  }
 
  .innerOne p{
   font-size: 7px;
- }*/
+ }
 }

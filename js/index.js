@@ -12,9 +12,10 @@ tl.fromTo(".texto-banner, .botao",
     "-=1"
 )
 
-gsap.from(".texto1, .navBar",
+gsap.from(".texto1, .navBar, .imgLogo",
     {opacity: 0, 
-    duration:3
+    duration:3,
+    delay: "0.5"
     },
    
 )
