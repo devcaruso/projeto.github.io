@@ -8,9 +8,11 @@
 
   }
   html, body{
+    display: flex;
     width: 100%;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
     /*overflow-x: hidden;
     overflow-y: auto;*/
     background: black;
@@ -274,41 +276,119 @@ a:hover{
 }
 
 .corpo{
+  width: 60%;
+  width: 100vh;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+
+.img-fundoregente{
+  opacity: 1;
+  width: 100%;
   height: 100vh;
-}
-.conteiner{
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.apresentation{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  object-fit: cover;
+  display: block;
+  filter: blur(1px) brightness(1);
+  background: linear-gradient(black 85%, black 85%);
+  background-color: linear-gradient(black 85%, black 85%, transparent 50%);
+   -webkit-mask-image: linear-gradient(to top, black 60%, black 85%);
+  mask-image: linear-gradient(to top, black 38%, black 60%, transparent 100%);
+
 }
 
-.img-regente{
-  
-  height: 500px;
-  margin-top:20%;
+/*imagem de fundo*/
+.hero{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  filter: grayscale(1)
+  sepia(.15) contrast(1.4)
+  brightness(.13);
+  object-fit: cover;
 }
-.innerOne{
+.hero::after{
+  object-fit: cover;
+  content: "";
+  inset: 0;
+  background: radial-gradient( ellipse at all center transparent 80%,rgba(0,0,0,.85)),rgba(0,0,0,0.85);
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        ellipse at center,
+        transparent 35%,
+        rgba(0, 0, 0, 0.20) 40%,
+        rgba(0, 0, 0, 0.20) 70%,
+        #000 100%
+    );
+    z-index: 1;
+    pointer-events: none;
+}
+
+.trasnp{
+  display: flex;
   position: relative;
-  color: white;
+
+
+}
+
+.hero-imgsmg{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 50%;
-  font-size: 25px;
-  margin-left: -200px;
-  
-  
+  position: absolute;
+ 
+  z-index: 1;
 }
-.innerOne h2{
-  margin-bottom: 80px;
-  font-size:45px ;
+.hero-imgsmg img{
+  
+  margin-top: -50px;
+  width: 250px;
+  position: absolute;
+  z-index: 1;
+}
+
+.hero-imgsmg h1{
+  width: 70%;
+  margin-top: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+}
+
+.hero-imgsmg p{
+  width: 80%;
+  margin-top: 60%;
+
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+}
+
+.box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  border: 1px solid rgb(237, 230, 230);
+  width: 40%;
+  color: aliceblue;
+  height: 75%;
+  z-index: 2;
+}
 
 
-  
-}
 
 @media screen and (max-width: 600px) {
   *{
