@@ -1,8 +1,6 @@
 
 
-const sectionFirst = document.querySelector(".queryselecor");
 
-const o1 = document.querySelector(".corpo");
 
 
 gsap.from(".menu",{
@@ -22,18 +20,54 @@ gsap.fromTo(".texto-banner, .botao", {
     duration: 1,
     opacity: "100%",
 })
-
-
-gsap.from(".corpo",{
+function scrollTriggerAnimation(elem, starting,ending, mk, sc){
+gsap.fromTo(elem,{
+   opacity:1,
+   duration:3},{
+    x:-480,
     opacity:0,
-    duration:2,
-    delay: "0.5",
+    duration:3,
+    stagger: 1,
+    scrollTrigger: {
+        trigger: elem,
+        start: starting,
+        end: ending,
+        taggleActions:"play none none reverse",
+        fastScrollEnd: true,
+        preventOverlaps: true,
+        markers: mk,
+        scrub: true
+        }
+})
+}
+
+scrollTriggerAnimation(".texto-banner","90% 20%", "400% 35%");
+scrollTriggerAnimation(".botao","450% center", "900% center",true)
+gsap.fromTo(".corpo",{
+    opacity:0},{
+        opacity:1,
+        duration:3,
+        stagger: "0.5",
     scrollTrigger: {
         trigger: ".corpo",
-        start: 'top 60%',
-        end: 'bottom 20%',
-        markers: true
+        start: '5% center',
+        end: 'center 70%',
+        
+        scrub: true
         }
+})
+
+gsap.fromTo(".hero-imgsmg",{
+    },{
+
+    y:-300,
+    scrollTrigger:{
+    trigger:".hero-imgsmg",
+    start:"top center",
+    end: "bottom center",
+    scrub: true
+    }
+
 })
 
 
