@@ -42,7 +42,8 @@ gsap.fromTo(elem,{
 }
 
 scrollTriggerAnimation(".texto-banner","90% 20%", "400% 35%");
-scrollTriggerAnimation(".botao","450% center", "900% center",true)
+scrollTriggerAnimation(".botao","390% center", "600% center");
+
 gsap.fromTo(".corpo",{
     opacity:0},{
         opacity:1,
@@ -52,7 +53,6 @@ gsap.fromTo(".corpo",{
         trigger: ".corpo",
         start: '5% center',
         end: 'center 70%',
-        
         scrub: true
         }
 })
