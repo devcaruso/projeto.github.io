@@ -44,25 +44,25 @@ gsap.fromTo(elem,{
 scrollTriggerAnimation(".texto-banner","90% 20%", "400% 35%");
 scrollTriggerAnimation(".botao","390% center", "600% center");
 
-gsap.fromTo(".corpo",{
+gsap.fromTo(".corpo, .box",{
     opacity:0},{
         opacity:1,
         duration:3,
         stagger: "0.5",
     scrollTrigger: {
-        trigger: ".corpo",
+        trigger: ".corpo, .box",
         start: '5% center',
         end: 'center 70%',
         scrub: true
         }
 })
 
-gsap.fromTo(".hero-imgsmg",{
+gsap.fromTo(".hero-imgsmg, .box",{
     },{
 
-    y:-300,
+    y:-150,
     scrollTrigger:{
-    trigger:".hero-imgsmg",
+    trigger:".hero-imgsmg, .box",
     start:"top center",
     end: "bottom center",
     scrub: true
